@@ -15,7 +15,7 @@ class FarmThread(Thread):
 
         :param log: Logger object
         :param config: Config object
-        :param account: str, account name
+        :param account: str, account namehttps://github.com/ultyyp/CapsuleFarmerElvolved-Skribb11es-ult/blob/main/FarmThread.py
         :param stats: Stats, Stats object
         """
         super().__init__()
@@ -93,7 +93,7 @@ class FarmThread(Thread):
                     params = {
                         "username" : "CapsuleFarmerEvolved",
                         "embeds": [embed],
-                        "content": "<@" + str(config.getAccount(self.account)["discordid"]) + ">"  
+                        "content": "<@" + str(self.config.getAccount(self.account)["discordid"]) + ">"  
                     }
                     requests.post(self.config.connectorDrops, headers={"Content-type":"application/json"}, json=params)
             else:
