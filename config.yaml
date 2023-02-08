@@ -1,0 +1,8 @@
+accounts:
+  accoutname:
+    username: "" #riot user
+    password: "" #riot pass
+    discordid: "" #discord id of the person you want to get pinged for the webhook for said account
+
+debug: True
+connectorDropsUrl: "" #enter webhook url
